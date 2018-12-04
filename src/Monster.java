@@ -1,21 +1,13 @@
-public class Monster {
+public class Monster extends Position {
 
     private Position monsterPos;
     private int maxHealth;
     private int currentHealth;
 
-    public Monster(int startRow, int startCol) {
-        monsterPos = new Position(startRow, startCol);
+    public Monster(int row, int col) {
+        super(row, col);
         maxHealth = 10;
         this.currentHealth = maxHealth;
-    }
-
-    public Position getMonsterPos() {
-        return monsterPos;
-    }
-
-    public void setMonsterPos(Position monsterPos) {
-        this.monsterPos = monsterPos;
     }
 
     public int getMaxHealth() {

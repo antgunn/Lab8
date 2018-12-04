@@ -109,7 +109,8 @@ public class GUITowerDefence extends JFrame {
   public static void main(String[] args) {
 
     // Change this to try out different levels
-    //TowerDefenceLevel level = TowerDefenceLevel.buildDefaultLevel();
+    //TowerDefenceLevel level = TowerDefenceLevel.buildSimpleLevel();
+    TowerDefenceLevel level = TowerDefenceLevel.level();
 
     // Create the GUI and set it to be visible
     //GUITowerDefence gui = new GUITowerDefence(level);

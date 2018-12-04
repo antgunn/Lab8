@@ -1,6 +1,5 @@
 public class TowerDefenceLevel {
 
-    private Position pos;
     private static Monster monster;
     private static Tower tower;
 
@@ -16,8 +15,12 @@ public class TowerDefenceLevel {
     public TowerDefenceLevel(int height, int width, boolean[][] passable,
                              int startRow, int startCol,
                              int targetRow, int targetCol) {
-        monster = new Monster(startRow,startCol);
-        monster.getMonsterPos();
+    }
+
+    public static TowerDefenceLevel level() {
+        monster = new Monster(1,1);
+        System.out.println(monster.getPosToString());
+        return null;
     }
 
 
