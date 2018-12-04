@@ -20,11 +20,6 @@ public class TowerDefenceLevel {
         monster.getMonsterPos();
     }
 
-    public static void level(int startRow, int startCol) {
-        monster = new Monster(startRow,startCol);
-        monster.getMonsterPos();
-    }
-
 
     public int getHeight() {
         return 3; // TODO
