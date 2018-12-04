@@ -1,6 +1,5 @@
 public class Monster extends Position {
 
-    private Position monsterPos;
     private int maxHealth;
     private int currentHealth;
 
@@ -8,6 +7,30 @@ public class Monster extends Position {
         super(row, col);
         maxHealth = 10;
         this.currentHealth = maxHealth;
+    }
+
+    public void move() {
+
+    }
+
+    public void moveForward() {
+
+    }
+
+
+    public void moveBack() {
+
+    }
+
+    public void moveLeft() {
+
+    }
+
+    public boolean checkNextPos() {
+        // Check Right
+
+
+        return false;
     }
 
     public int getMaxHealth() {

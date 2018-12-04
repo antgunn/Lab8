@@ -1,7 +1,10 @@
+import java.util.Arrays;
+
 public class TowerDefenceLevel {
 
     private static Monster monster;
     private static Tower tower;
+    private int width, height;
 
     // Create a new tower defence level with the following parameters:
     // - 'width' and 'height' are the number of rows and columns of the level
@@ -15,21 +18,20 @@ public class TowerDefenceLevel {
     public TowerDefenceLevel(int height, int width, boolean[][] passable,
                              int startRow, int startCol,
                              int targetRow, int targetCol) {
-    }
+        this.height = height;
+        this.width = width;
 
-    public static TowerDefenceLevel level() {
-        monster = new Monster(1,1);
-        System.out.println(monster.getPosToString());
-        return null;
-    }
+        monster = new Monster(1,2);
+        System.out.println(monster.getPosArrayToString());
 
+    }
 
     public int getHeight() {
-        return 3; // TODO
+        return height;
     }
 
     public int getWidth() {
-        return 8; // TODO
+        return width;
     }
 
     public Position getPosition(int row, int col) {

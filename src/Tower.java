@@ -1,19 +1,18 @@
-public class Tower {
+public class Tower extends Position {
 
-    private Position towerPos;
     private int damage;
 
-    public Tower(Position pos) {
-        this.towerPos = pos;
+    public Tower(int row, int col) {
+        super(row, col);
         damage = 1;
     }
 
-    public Position getTowerPos() {
-        return towerPos;
+    public void buildTower() {
+
     }
 
-    public void setTowerPos(Position towerPos) {
-        this.towerPos = towerPos;
+    public void attack() {
+
     }
 
     public int getDamage() {
